@@ -38,6 +38,7 @@ namespace Collection
             /*INSERT INTO ARRAYLIST*/
             list2.Insert(0, "Wutche");
             list2.Insert(3, 509);
+            list2.Remove(0);
 
             foreach (var item in list2)
             {
