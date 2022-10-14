@@ -40,9 +40,18 @@ namespace Collection
             list2.Insert(3, 509);
             list2.Remove(0);
 
-            foreach (var item in list2)
+            /*foreach (var item in list2)
             {
                 Console.WriteLine(item);
+            }*/
+
+            ArrayList list3 = new ArrayList() {"Rivers","Benin","Lagos"};
+            ArrayList list4 = new ArrayList() {"Imo","Bayelsa"};
+
+            list3.InsertRange(1, list4);
+            foreach (var item in list3)
+            {
+                Console.WriteLine($"{item}");
             }
         }
     }
