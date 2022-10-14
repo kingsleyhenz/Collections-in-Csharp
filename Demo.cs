@@ -21,10 +21,27 @@ namespace Collection
             listone.Add(4.5);
             listone.Add(null);
 
-            foreach(var item in listone)
+           /* foreach (var item in listone)
             {
                 Console.WriteLine(item);
                 Console.ReadLine();
+            }
+
+            int firstnum = Convert.ToInt32(listone[0]);
+            Console.WriteLine(firstnum);
+            String Second = Convert.ToString(listone[1]);
+            Console.WriteLine(Second);
+            double third = Convert.ToDouble(listone[4]);
+            Console.WriteLine(third);
+           */
+            ArrayList list2 = new ArrayList() { 101, "Mike", true, 10.30 };
+            /*INSERT INTO ARRAYLIST*/
+            list2.Insert(0, "Wutche");
+            list2.Insert(3, 509);
+
+            foreach (var item in list2)
+            {
+                Console.WriteLine(item);
             }
         }
     }
