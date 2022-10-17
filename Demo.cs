@@ -75,6 +75,28 @@ namespace Collection
             {
                 Console.WriteLine("key: " + entry.Key + " |value: " + entry.Value);
             }
+/*REMOVE*/
+            if (user.Contains("246"))
+            {
+                user.Remove("246");
+            }
+
+            Console.WriteLine("\n\n");
+            foreach (DictionaryEntry entry in user)
+            {
+                Console.WriteLine("key: " + entry.Key + " |value: " + entry.Value);
+            }
+
+            /*UPDATE*/
+            if (user.Contains("046"))
+            {
+                user["046"] = "Okosdo";
+            }
+            Console.WriteLine("\n\n");
+            foreach (DictionaryEntry entry in user)
+            {
+                Console.WriteLine("key: " + entry.Key + " |value: " + entry.Value);
+            }
         }
     }
 }
