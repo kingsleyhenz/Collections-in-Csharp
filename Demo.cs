@@ -48,10 +48,32 @@ namespace Collection
             ArrayList list3 = new ArrayList() {"Rivers","Benin","Lagos"};
             ArrayList list4 = new ArrayList() {"Imo","Bayelsa"};
 
-            list3.InsertRange(1, list4);
+          /*  list3.InsertRange(1, list4);*/
+                /*list3.RemoveAt(1);
+                list3.Remove("Benin");
             foreach (var item in list3)
             {
                 Console.WriteLine($"{item}");
+            }*/
+
+           /* ArrayList nums = new ArrayList() {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+            int count = 0;
+            for(int i = 0; i < nums.Count; i+=2)
+            {
+                count += Convert.ToInt32(nums[i]);
+            }
+            Console.WriteLine(count);
+            Console.ReadLine();*/
+
+            Hashtable user = new Hashtable();
+            user.Add("046","Sophia");
+            user.Add("246", "Ebube");
+            user.Add("302", "Nadyne");
+            user.Add("169", "Obinna");
+
+            foreach(DictionaryEntry entry in user)
+            {
+                Console.WriteLine("key: " + entry.Key + " |value: " + entry.Value);
             }
         }
     }
